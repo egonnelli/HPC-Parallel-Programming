@@ -13,7 +13,7 @@ echo "REDUCTION"
 
 for j in {1..5..1};
 do for i in {1..20..1};
-do export OMP_NUM_THREADS=$i; ./reduction_pi_chromo.o;
+do export OMP_NUM_THREADS=$i; ./reduction_pi_chrono.o;
 sleep 3;
 done
 done
@@ -22,7 +22,7 @@ echo "CRITICAL"
 
 for j in {1..5..1};
 do for i in {1..20..1};
-do export OMP_NUM_THREADS=$i; ./critical_pi_chromo.o;
+do export OMP_NUM_THREADS=$i; ./critical_pi_chrono.o;
 sleep 3;
 done
 done
@@ -31,7 +31,7 @@ echo "ATOMIC"
 
 for j in {1..5..1};
 do for i in {1..20..1};
-do export OMP_NUM_THREADS=$i; ./atomic_pi_chromo.o;
+do export OMP_NUM_THREADS=$i; ./atomic_pi_chrono.o;
 sleep 3;
 done
 done
