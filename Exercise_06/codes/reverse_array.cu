@@ -66,7 +66,6 @@ int main( int argc, char** argv)
       cudaFree( d_out );
       delete[] h_in;
       delete[] h_out;
-
-      
+     
    return 0;
 }
